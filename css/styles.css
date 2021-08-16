@@ -1,3 +1,4 @@
+
 body {
   color: #40514E;
   margin: 0;
@@ -37,10 +38,39 @@ a:hover {
   color: #EAF6F6;
 }
 
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #0CECDD;
+}
+
 .top-container {
   background-color: #CDF0EA;
   position: relative;
   padding-top: 100px;
+  padding-bottom: 0;
 }
 
 .middle-container {
@@ -65,21 +95,62 @@ a:hover {
   font-size: 75%;
   padding: 20px 0;
 }
+.mountain{
+  width: 50%;
+  margin-bottom: 0;
+
+}
 .top-cloud {
   position: absolute;
   right: 300px;
-  top: 40px;
+  top: 80px;
+  animation: move-top-cloud 15s infinite;
+  color: #7DEDFF;
+}
+@keyframes move-top-cloud {
+  from {right: 0;}
+  to {right: 300px;}
 }
 
 .bottom-container {
   background-color: #66BFBF;
-  padding: 40px 0 10px;
+  padding: 40px 0 0;
+}
+.social-network {
+  width: 300px;
+  display: inline-block;
+}
+
+.linkedIn-img {
+  width: 2%;
+  float: left;
+  position: absolute;
+  margin-left: -5px;
+}
+
+.github-img {
+  width: 2%;
+  float: left;
+  position: absolute;
+  margin-left: -5px;
+}
+.facebook-img {
+  width: 2%;
+  float: left;
+  position: absolute;
+  margin-left: -5px;
 }
 
 .bottom-cloud {
   position: absolute;
   left: 250px;
   bottom: 300px;
+  animation: move-bottom-cloud 15s infinite;
+}
+
+@keyframes move-bottom-cloud {
+  from {left: 0;}
+  to {left: 300px;}
 }
 
 .skill-row {
@@ -88,14 +159,14 @@ a:hover {
   text-align: left;
 }
 
-.java-img {
-  width: 40%;
+.coding-img {
+  width: 20%;
   float: left;
   margin-right: 30px;
 }
 
-.js-img {
-  width: 40%;
+.tennis-img {
+  width: 35%;
   float: right;
   margin-left: 30px;
 }
