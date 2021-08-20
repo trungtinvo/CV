@@ -1,76 +1,57 @@
 
 body {
-  color: #40514E;
-  margin: 0;
-  text-align: center;
   font-family: 'Merriweather', serif;
+  text-align: center;
+}
+.top-container {
+  background-color: #CDF0EA;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.container-fluid {
+  padding: 3% 15%;
+}
+.navbar-brand {
+  font-family: "Montserrat";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
 }
 
 h1 {
-  color: #66BFBF;
   font-size: 90px;
   font-family: 'Sacramento', cursive;
-  margin: 50px auto 0 auto;
 }
 
 h2 {
-  color: #66BFBF;
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
-  font-weight: normal;
   padding-bottom: 10px;
+  margin-top: 40px;
 }
 
 h3 {
-  color: #11999E;
   font-family: 'Montserrat', sans-serif;
 }
 p {
     line-height: 2;
 }
 a {
-  color: #11999E;
   font-family: 'Montserrat', sans-serif;
   margin: 10px 20px;
   text-decoration: none;
 }
 a:hover {
   color: #EAF6F6;
-}
-
-nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav li {
-    float: right;
-}
-
-nav li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav li a:hover {
-    color: #0CECDD;
-}
-
-.top-container {
-  background-color: #CDF0EA;
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 0;
 }
 
 .middle-container {
@@ -95,21 +76,31 @@ nav li a:hover {
   font-size: 75%;
   padding: 20px 0;
 }
-.mountain{
-  width: 50%;
-  margin-bottom: 0;
 
+.mountain{
+  width: 70%;
+  margin-bottom: -35px;
 }
 .top-cloud {
   position: absolute;
-  right: 300px;
-  top: 80px;
+  right: 0px;
+  top: 300px;
   animation: move-top-cloud 15s infinite;
-  color: #7DEDFF;
 }
 @keyframes move-top-cloud {
   from {right: 0;}
   to {right: 300px;}
+}
+.bottom-cloud {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  animation: move-bottom-cloud 15s infinite;
+}
+
+@keyframes move-bottom-cloud {
+  from {left: 0;}
+  to {left: 300px;}
 }
 
 .bottom-container {
@@ -141,18 +132,6 @@ nav li a:hover {
   margin-left: -5px;
 }
 
-.bottom-cloud {
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
-  animation: move-bottom-cloud 15s infinite;
-}
-
-@keyframes move-bottom-cloud {
-  from {left: 0;}
-  to {left: 300px;}
-}
-
 .skill-row {
   width: 65%;
   margin: 100px auto 100px auto;
@@ -173,7 +152,7 @@ nav li a:hover {
 
 hr {
   background-color: white;
-  border: dotted #EAF6F6;
+  border: dotted #B5EAEA;
   border-width: 10px 0 0 0;
   width: 150px;
   margin: 100px auto;
